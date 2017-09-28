@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+	<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+	<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+	<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+	<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+	<!--[if gte IE 9 ]><html class="no-js ie9" lang="en"> <![endif]-->
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+			<script type="text/javascript">
+		var ajaxurl = 'http://www.polatnickproperties.com/wp-admin/admin-ajax.php';
+		</script>
+		
+<!-- This site is optimized with the Yoast SEO plugin v4.0.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Polatnitck Properties Clients - Polatnick Properties, Inc.</title>
+<link rel="canonical" href="http://www.polatnickproperties.com/about/clients/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Polatnitck Properties Clients - Polatnick Properties, Inc." />
+<meta property="og:description" content="A FULL SERVICE FIRM Polatnick Properties is a specialty commercial real estate company that has ..." />
+<meta property="og:url" content="http://www.polatnickproperties.com/about/clients/" />
+<meta property="og:site_name" content="Polatnick Properties, Inc." />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/SFatDusk.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/SJQuiltmuseumLogo.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/CCALogo.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/HaasFundLogo.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/wirednews.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/hotwired.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/hotbot.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/rabin.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/projectachieve.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/shockwave.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/linuxcare.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/netperceptions.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/moai.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/medchannel-logo.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/focal.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/ispchannel2.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/sega.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/dreamcast.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/macromedia.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/towerrecords.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/viant.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/xpedx.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/softnet2.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/zdnet.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/techtv.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/colo.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aziffdavismedia.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/sfgiants.gif" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Acheivers.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aCoalesse.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Frog.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Healthline-300x58.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/J.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aJuicebox.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Level2.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Manage.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aRedCircle.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aSchweiz.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aSwissnex.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aTalix.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aTintri.png" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.polatnickproperties.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='appfolio_icomoon_shortcodes_css-css'  href='http://www.polatnickproperties.com/wp-content/plugins/appfolio-icomoon-shortcodes/assets/css/appfolio_icomoon_shortcodes.min.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='appfolio-css'  href='http://www.polatnickproperties.com/wp-content/themes/broadway/assets/css/appfolio_broadway_theme.min.css?ver=1482869043' type='text/css' media='all' />
+<link rel='stylesheet' id='appfolio-global-css-css'  href='http://www.polatnickproperties.com/wp-content/themes/appfolio-framework/assets/css/appfolio-framework.min.css?ver=1482869089' type='text/css' media='all' />
+<link rel='stylesheet' id='appfolio_google_font-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;ver=4.7.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://www.polatnickproperties.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.polatnickproperties.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.polatnickproperties.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.polatnickproperties.com/?p=183' />
+<link rel="alternate" type="application/json+oembed" href="http://www.polatnickproperties.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.polatnickproperties.com%2Fabout%2Fclients%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.polatnickproperties.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.polatnickproperties.com%2Fabout%2Fclients%2F&#038;format=xml" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-73331202-2', 'auto', {'name':'appfolio'});
+	  ga('appfolio.send', 'pageview');
+	</script>
+<link type="text/plain" rel="author" href="http://www.polatnickproperties.com/wp-content/themes/appfolio-framework/humans.txt" /><link rel="icon" href="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-180x180.png" />
+<meta name="msapplication-TileImage" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-270x270.png" />
+<!-- AppFolio Customizer Output --><style type="text/css">body, .body-background-color { background:#ffffff; }.primary-background-color { background:#5682cd; }.secondary-background-color { background:#5682cd; }.tertiary-background-color { background:#000000; }.menu-background-color { background:rgba(86, 130, 205, 1.0); }.main-menu-location ul li:hover > a, .main-menu-location ul li:focus > a, .main-menu-location ul ul.sub-menu li a:hover, .main-menu-location ul ul.sub-menu li a:focus, .login-menu-location ul li:hover > a, .login-menu-location ul li:focus > a, .login-menu-location ul ul.sub-menu li a:hover, .login-menu-location ul ul.sub-menu li a:focus { background:#5682cd; }.main-menu-location ul ul.sub-menu, .login-menu-location ul ul.sub-menu { background:#5682cd; }.menu-hightlight-color { background:rgba(98, 142, 217, 1.0); }.footer-background-color { background:#5682cd; }.footer-background-color-basement { background:#3c68b3; }.between-primary-and-secondary-33 { background:#5682cd; }.between-primary-and-secondary-66 { background:#5682cd; }.header_font, h1, h2, h3, h4, h5, h6 { font-family:"Open Sans", sans-serif; }.body_font, body { font-family:"Open Sans", sans-serif; }.primary-font-color, primary-font-color a, primary-font-color a:visited, h2 { color:#2e2423; }.primary-font-color-alt { color:#473d3c; }ul.property-menu li.menu-item.current-item a, .property-single-detail-box { color:#ffffff; }ul.property-menu li.menu-item.current-item:after { border-top:10px #5682cd solid; }.menu-font-color, .footer, .footer-links { color:#ffffff; }h3, .icon-home, .header-phone { color:#5682cd; }.secondary-font-color, h4 { color:#5682cd; }.tertiary-font-color, h1, .footer h2 { color:#000000; }.header-phone .social-menu-location ul li a:before { color:#5682cd; }.greeting-box { background:rgba(46, 36, 35, 0); }.greeting-box, .greeting-box h1 { color:#ffffff; }.greeting-button, .greeting-button:hover, .greeting-button:focus, .greeting-button:visited { color:#ffffff; }.greeting-button { background:#ffffff; }a.greeting-button:hover, a.greeting-button:focus { background:#e5e5e5; }.box_1 { background:#edecea; }.box_1 { color:#2e2423; }.box-button_1 { background:#b1822d; }.box-button_1:hover, .box-button_1:focus { background:#976813; }.box-button_1, .box-button_1:hover, .box-button_1:focus, .box-button_1:visited { color:#ffffff; }.box_2 { background:#edecea; }.box_2 { color:#000000; }.box-button_2 { background:#b1822d; }.box-button_2:hover, .box-button_2:focus { background:#976813; }.box-button_2, .box-button_2:hover, .box-button_2:focus, .box-button_2:visited { color:#ffffff; }.box_3 { background:#edecea; }.box_3 { color:#2e2423; }.box-button_3 { background:#b1822d; }.box-button_3:hover, .box-button_3:focus { background:#976813; }.box-button_3, .box-button_3:hover, .box-button_3:focus, .box-button_3:visited { color:#ffffff; }.header_font, h1, h2, h3, h4, h5, h6 { font-family:"Open Sans", sans-serif; }.body_font, body { font-family:"Open Sans", sans-serif; }</style><!-- AppFolio Customizer Output -->		<style type="text/css" id="wp-custom-css">
+			
+
+@import url(https://fonts.googleapis.com/css?family=Hind);
+div.logo {
+    padding: 15px 0 10px 5px;
+}
+
+@media only screen and (max-width: 767px) {
+.home .super-container.header-image {
+    height: 425px !important;
+}
+}
+/*
+.entry-content {
+  margin:0% 6%;*/
+}
+/* Header Bar
+------------------------------ */
+
+/*push logo further to right
+div.logo {
+    padding: 15px 0 10px 65px;*/
+}
+
+/*Make home page image taller on mobile*/
+@media only screen and (max-width: 767px) {
+.home .super-container.header-image {
+    height: 400px;
+}
+}
+
+
+/*Push phone number down on larger screen sizes to align with center of logo*/
+@media only screen and (min-width:767px) {
+.super-container.header .header-phone a {
+    margin: 40px 0 0;
+}
+}
+
+
+/* Make phone number black instead of light green */
+.header-phone a {
+color:#005030;
+      font-size: 16px !important;
+}
+
+
+/* Home Page
+--------------------------- */
+
+/*Add space below icons*/
+.row.ppi-icon-row {
+  padding-bottom: 30px;
+}
+
+/*Remove boxes from home page*/
+.super-container.boxes-holder {
+     display: none;
+}
+
+.page-id-2 .header_font {
+    font-weight: 700;
+}
+
+/* Case Studies Page
+------------------------------ */
+
+.page-id-182 .entry-content h2 {
+    /*font-family: 'Hind', sans-serif;*/
+    /*text-align:center;*/
+/*    font-weight:700;*/
+    /*text-transform:uppercase;*/
+    font-size: 18px;
+    color:#005030 !important;
+}
+
+.page-id-182 .entry-content h3 {
+    /*font-family: 'Hind', sans-serif;
+text-align:center;*/
+    font-size: 22px;
+    color:#444!important;
+  font-weight:700;
+}
+
+.page-id-183 .entry-content img {
+    padding-bottom:20px;
+}
+
+
+
+/* Main and Login Menus
+------------------------------ */
+
+/*Hide home button on desktop*/
+@media only screen and (min-width: 768px) {
+li.hidehome {
+   display:none !important;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .super-container.menu-background-color {
+    background: #CCBDAE;
+  }
+}
+
+.menu-main-menu-container ul.menu li.menu-item a,
+.login-menu-location ul li a {
+  font-size: 16px;
+  /*font-weight:700;*/
+  letter-spacing: 2px;
+}
+
+.menu-main-menu-container ul.menu li.menu-item.current-menu-item a {
+  background: #77A694;
+}
+
+
+
+/* Gravity Forms Modifications
+--------------------------------- */
+
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=text],
+body .gform_wrapper .gform_body .gform_fields .gfield textarea {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; 
+}
+
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type=submit] {
+   background: #77A694;
+   border: none;
+   font-size: 1.5em;
+   color: #ffffff;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-family: inherit;
+   padding: 5px 20px;
+   cursor: pointer;
+}
+
+.gform_wrapper .gform_footer input.button:hover, 
+.gform_wrapper .gform_footer input[type=submit]:hover {
+ 	color: #ffffff;
+	background: #005030;
+}
+  
+  
+---------------------------------*/
+
+.page-template-default .header.entry-header .entry-title {
+  display:none;
+  visibility:hidden;
+}
+.entry-title {
+  display:none;
+}
+
+.page-template-default #primary {
+  margin-top: 0;
+}
+
+/*Add space below three dot section break image
+.sectionbreak img {
+ margin-bottom:40px;
+}*/
+
+
+
+/* Site Text
+--------------------------- */
+
+
+
+.entry-content h1 {
+    line-height: 1em;
+    font-size: 28px;
+    letter-spacing: 4px;
+    word-spacing:5px;
+    padding-bottom:20px;
+    margin-top: 42px;
+  color:#005030;
+/*text-align:center;*/
+}
+
+.entry-content p, .entry-content li {
+/*text-align:center;*/;
+}
+.entry-content h3 {
+   color:#005030;
+/*text-align:center;*/
+}
+
+
+
+.entry-content h2 {
+    padding-bottom:20px;
+/*text-align:center;*/
+}
+.entry-content h4 {
+     font-size:20px;
+ /* font-weight:700;*/
+   /*text-align:center;*/
+  color:#333;
+}
+
+/*make h2 text black on case studies page*/
+.pph2 h2 {
+  color:#000;
+}
+
+.footer h2 {
+    color: #ffffff !important;
+}
+
+
+
+/* Buttons!
+--------------------------- */
+a.ppi-button {
+  text-align:center;
+  width:95%;
+  letter-spacing: 2px;
+  margin-top:20px;
+}
+
+.ppi-button,
+a.ppi-button:visited {
+  margin-bottom: 10px;
+  border: 2px solid #005030;/*#77A694*/
+  background: #005030; /*#77A694*/
+  color: #ffffff;
+  padding: 7px 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+
+a.ppi-button:hover {
+  	color: #ffffff;
+	background: #A3C1B5;
+}
+
+
+
+/* --------------------------- */
+
+hr {
+  border-top:1px solid #222;
+}
+
+/*add space between phone number sections on contact us page on mobile*/
+.addspace {
+  padding-bottom:20px;
+  text-align:center;
+}
+
+/*remove margins for these rows*/
+.nomargin {
+  margin-bottom:0px;
+}
+
+
+/*Tenant/Landlord Services Page*/
+.content-section > div {
+    display: none;
+}
+
+.content-section h2:hover {
+    cursor:pointer;
+    color:#005030;
+    text-decoration:underline;
+}
+
+.makebigger {
+    padding-bottom:30px;
+    margin-top: 42px;
+    text-align:center;
+    font-size: 20px;
+}
+.graybackground {
+  background:#ddd !important;
+}
+
+.postid-518 .super-container.map-holder {
+  display: none;
+}		</style>
+	</head>
+
+<body class="page-template-default page page-id-183 page-child parent-pageid-20 paper-texture"><!-- the Body  -->
+		<a href="#main-content" class="skip-to-content-link visually-hidden">
+		Skip to content	</a>
+		<div class="super-container header desktop">
+		<div class="container">
+			<div class="five columns omega header-phone">
+				<a href="tel:4154425000">(415) 442-5000</a>				<div class='social-info icon-social social-menu-location'>
+					<!--  Social Menu -->
+									</div>
+			</div>
+			<div class="eleven columns alpha">
+				<div class="logo">
+					<a href="http://www.polatnickproperties.com"><img src="/wp-content/uploads/sites/4329/2016/01/PPILogo.png" alt="Polatnick Properties, Inc. Logo"></a>				</div>
+			</div>
+		</div>
+	</div>
+	<div class="super-container">
+		<div class="super-container menu-background-color menu-font-color">
+			<div class="container">
+								<div class="fourteen columns alpha main-menu-location nojquery">
+					<div class="main-menu-welcome">
+													<div class="mobile-logo-holder">
+								<img src="/wp-content/uploads/sites/4329/2016/01/PPILogo.png" alt="Polatnick Properties, Inc. Logo">							</div>
+												<button type="button" class="icon-list">&#xe61e;</button>
+					</div>
+					<!--  the Menu -->
+					<div class="hider">
+						<nav class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-272" class="hidehome menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-272"><a href="http://www.polatnickproperties.com/">Home</a></li>
+<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-183 current_page_item menu-item-193"><a href="http://www.polatnickproperties.com/about/clients/">About</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-27"><a href="http://www.polatnickproperties.com/about/">Team</a></li>
+<li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192"><a href="http://www.polatnickproperties.com/case-studies/">Case Studies</a></li>
+<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-166" aria-haspopup="true"><a href="#">Services</a>
+<ul class="sub-menu" aria-haspopup="false" aria-label="Sub Menu">
+	<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="http://www.polatnickproperties.com/landlord-and-tenant-representation/">Landlord &#038; Tenant Representation</a></li>
+	<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="http://www.polatnickproperties.com/investments-and-property-development/">Investments &#038; Property Development</a></li>
+	<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="http://www.polatnickproperties.com/property-and-asset-management/">Property &#038; Asset Management</a></li>
+	<li id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337"><a href="http://www.polatnickproperties.com/construction-management-advisory-services/">Advisory Services</a></li>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="http://www.polatnickproperties.com/tenant-landlord-services/">Landlord &#038; Tenant Services</a></li>
+</ul>
+</li>
+<li id="menu-item-441" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-441"><a href="http://www.polatnickproperties.com/category/listings/">Listings</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://www.polatnickproperties.com/contact-us/">Contact</a></li>
+<li id="menu-item-419" class="menu-item menu-item-type-taxonomy menu-item-object-category current-page-parent menu-item-419"><a href="http://www.polatnickproperties.com/category/news/">News</a></li>
+</ul></nav>						
+					</div>
+				</div>
+									
+							</div> <!-- container -->
+		</div> <!-- super-container -->
+
+		<div id="main-content"><!-- target for accessibility purposes --></div>
+
+			</div>
+	<div class="super-container primary-font-color-alt">
+	<div class="container">
+	<div class="sixteen columns alpha">
+		<div id="primary">
+			<div id="content">
+				<div class="main">
+					<header class="entry-header">
+						<h1 class="entry-title">Polatnitck Properties Clients</h1>
+					</header>
+
+										<article id="post-183" class="post-183 page type-page status-publish hentry">
+						<div class="entry-content">
+							<p><img class="aligncenter size-full wp-image-373" src="/wp-content/uploads/sites/4329/2016/01/SFatDusk.jpg" alt="San Francisco at night" width="1100" height="400" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/SFatDusk.jpg 1100w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/SFatDusk-300x109.jpg 300w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/SFatDusk-768x279.jpg 768w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/SFatDusk-1024x372.jpg 1024w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/SFatDusk-700x255.jpg 700w" sizes="(max-width: 1100px) 100vw, 1100px" /></p>
+<h1>A FULL SERVICE FIRM</h1>
+<hr />
+<p>Polatnick Properties is a specialty commercial real estate company that has been serving the Bay Area since 1989. We specialize in the disposition, acquisition, redevelopment and repositioning and management of office, specialty use complexes, industrial and retail properties throughout California, with a focus on the San Francisco’s Bay Area</p>
+<h2>Why us</h2>
+<p>Our diverse clientele includes property owners, high net worth individuals, REITs, national investment firms, corporations and large public institutions. The defining common factor between them all, and the reason we are proud to have them as partners and clients, is that they are seeking innovative, comprehensive and strategic solutions to their real estate needs. From uncovering valuable opportunities, through negotiating due diligence and navigating the permit process, to the realization of each client’s vision; our team acts strategically with creativity, efficiency and diligence.</p>
+<h2>How we work</h2>
+<p>We begin by developing a complete analysis of each client’s short and long-term financial goals to create an individualized marketing and development strategy. Our extensive, in-depth knowledge of competitive leasing and sales product and market activity guarantees informed decision making and no missed opportunities. Our long-standing relationships with local experts such as Land Use Attorneys, Architects, Engineers, Contractors, Expeditors, and Political Consultants allow us to compose a team of highly qualified professionals for each project. All of these elements ensure the best possible positioning in alignment with the clients’ objectives, thereby maximizing return on investment and asset value.</p>
+<p>Our team has unparalleled experience in San Francisco’s commercial marketplace. Through many years in the business, we have built an extensive database of contacts, including national and international investors, developers and property owners, as well as access to the entire brokerage community.</p>
+<h2>What makes us special</h2>
+<p>Our work has included the redevelopment and repositioning of several notable city properties, as well as other long-term, multi-faceted projects that included the acquisition and development of property for high-profile Bay Area Institutions. We are best known for our ability to buy, reposition and sell “gems in the rough”; identifying each property’s highest and best use, and creating a strategic plan to reposition it as such. We believe in creating, rather than simply presenting opportunities for our client. We skillfully maneuver through and welcome the challenges that are part of any redevelopment opportunity.</p>
+<h1>POLATNICK CLIENTS</h1>
+<hr />
+<div class="graybackground">
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="alignright size-full wp-image-327" src="/wp-content/uploads/sites/4329/2016/01/SJQuiltmuseumLogo.png" alt="San Jose Museum of Quilts &amp; Textiles Logo" width="275" height="90" /></div>
+<div class="one-third column"><img class="alignright size-full wp-image-328" src="/wp-content/uploads/sites/4329/2016/01/CCALogo.png" alt="California College of the Arts Logo" width="300" height="36" /></div>
+<div class="one-third column omega"><img class="alignright size-full wp-image-330" src="/wp-content/uploads/sites/4329/2016/01/HaasFundLogo.png" alt="Walter &amp; Elise Hass Fund Logo" width="275" height="73" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-263" src="/wp-content/uploads/sites/4329/2016/01/wirednews.gif" alt="Wired News Logo" width="201" height="78" /></div>
+<div class="one-third column"><img class="aligncenter size-full wp-image-246" src="/wp-content/uploads/sites/4329/2016/01/hotwired.gif" alt="Hotwired Logo" width="151" height="31" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-245" src="/wp-content/uploads/sites/4329/2016/01/hotbot.gif" alt="Hotbot Logo" width="135" height="47" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-254" src="/wp-content/uploads/sites/4329/2016/01/rabin.gif" alt="Rabin Worldwide Logo" width="176" height="53" /></div>
+<div class="one-third column"><img class="aligncenter size-full wp-image-253" src="/wp-content/uploads/sites/4329/2016/01/projectachieve.gif" alt="Project Achieve Logo" width="215" height="50" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-257" src="/wp-content/uploads/sites/4329/2016/01/shockwave.gif" alt="Shockwave Logo" width="260" height="30" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-248" src="/wp-content/uploads/sites/4329/2016/01/linuxcare.gif" alt="Linuxcare Logo" width="270" height="58" /></div>
+<div class="one-third column"><img class="aligncenter size-full wp-image-252" src="/wp-content/uploads/sites/4329/2016/01/netperceptions.jpg" alt="Net Perceptions Logo" width="184" height="39" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-251" src="/wp-content/uploads/sites/4329/2016/01/moai.gif" alt="MOAI Technologies Logo" width="74" height="108" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-250" src="/wp-content/uploads/sites/4329/2016/01/medchannel-logo.gif" alt="MedChannel Logo" width="202" height="40" /></div>
+<div class="one-third column"><img class="aligncenter size-full wp-image-244" src="/wp-content/uploads/sites/4329/2016/01/focal.gif" alt="Focal Logo" width="171" height="42" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-247" src="/wp-content/uploads/sites/4329/2016/01/ispchannel2.gif" alt="ISP Channel logo" width="89" height="53" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-255" src="/wp-content/uploads/sites/4329/2016/01/sega.gif" alt="SEGA Logo" width="109" height="41" /></div>
+<div class="one-third column"><img class="aligncenter size-full wp-image-243" src="/wp-content/uploads/sites/4329/2016/01/dreamcast.gif" alt="Dreamcast logo" width="252" height="47" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-249" src="/wp-content/uploads/sites/4329/2016/01/macromedia.gif" alt="Macromedia Logo" width="114" height="43" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-261" src="/wp-content/uploads/sites/4329/2016/01/towerrecords.gif" alt="Tower Records Logo" width="212" height="30" /></div>
+<div class="one-third column"><img class="aligncenter size-full wp-image-262" src="/wp-content/uploads/sites/4329/2016/01/viant.gif" alt="Viant Logo" width="131" height="77" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-264" src="/wp-content/uploads/sites/4329/2016/01/xpedx.gif" alt="Xpedx Logo" width="176" height="65" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-258" src="/wp-content/uploads/sites/4329/2016/01/softnet2.jpg" alt="Softnet Systems Logo" width="305" height="55" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/softnet2.jpg 305w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/softnet2-300x55.jpg 300w" sizes="(max-width: 305px) 100vw, 305px" /></div>
+<div class="one-third column"><img class="aligncenter size-full wp-image-265" src="/wp-content/uploads/sites/4329/2016/01/zdnet.gif" alt="ZD Net Logo" width="87" height="68" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-259" src="/wp-content/uploads/sites/4329/2016/01/techtv.gif" alt="Techtv Logo" width="247" height="77" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="aligncenter size-full wp-image-241" src="/wp-content/uploads/sites/4329/2016/01/colo.gif" alt="colo" width="276" height="62" /></div>
+<div class="one-third column"><img src="/wp-content/uploads/sites/4329/2016/01/aziffdavismedia.jpg" alt="Ziff Davis Media Logo" width="67" height="125" class="aligncenter size-full wp-image-408" /></div>
+<div class="one-third column omega"><img class="aligncenter size-full wp-image-256" src="/wp-content/uploads/sites/4329/2016/01/sfgiants.gif" alt="San Francisco Giants Logo" width="153" height="87" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="size-full wp-image-385 aligncenter" src="/wp-content/uploads/sites/4329/2016/01/Acheivers.png" alt="Acheivers Logo" width="236" height="57" /></div>
+<div class="one-third column"><img src="/wp-content/uploads/sites/4329/2016/01/aCoalesse.jpg" alt="Coalesse Logo" width="95" height="95" class="aligncenter size-full wp-image-398" /></div>
+<div class="one-third column omega"><img class="size-full wp-image-387 aligncenter" src="/wp-content/uploads/sites/4329/2016/01/Frog.png" alt="Frog logo" width="94" height="57" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="size-medium wp-image-388 aligncenter" src="/wp-content/uploads/sites/4329/2016/01/Healthline-300x58.png" alt="Healthline Logo" width="300" height="58" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Healthline-300x58.png 300w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Healthline-440x86.png 440w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/Healthline.png 448w" sizes="(max-width: 300px) 100vw, 300px" /></div>
+<div class="one-third column"><img src="/wp-content/uploads/sites/4329/2016/01/J.jpg" alt="J Logo" width="75" height="75" class="aligncenter size-full wp-image-399" /></div>
+<div class="one-third column omega"><img src="/wp-content/uploads/sites/4329/2016/01/aJuicebox.png" alt="Juice Box Games Logo" width="138" height="75" class="aligncenter size-full wp-image-407" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img class="alignright size-full wp-image-391" src="/wp-content/uploads/sites/4329/2016/01/Level2.png" alt="Level 2 Logo" width="235" height="55" /></div>
+<div class="one-third column"><img class="size-full wp-image-392 aligncenter" src="/wp-content/uploads/sites/4329/2016/01/Manage.png" alt="Manage Logo" width="259" height="71" /></div>
+<div class="one-third column omega"><img src="/wp-content/uploads/sites/4329/2016/01/aRedCircle.jpg" alt="Red circle with graphic face in the middle" width="95" height="95" class="aligncenter size-full wp-image-400" /></div>
+</div>
+<div class="row nomargin">
+<div class="one-third column alpha"><img src="/wp-content/uploads/sites/4329/2016/01/aSchweiz.png" alt="Schweizerische Logo" width="307" height="75" class="aligncenter size-full wp-image-409" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aSchweiz.png 307w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aSchweiz-300x73.png 300w" sizes="(max-width: 307px) 100vw, 307px" /></div>
+<div class="one-third column"><img src="/wp-content/uploads/sites/4329/2016/01/aSwissnex.jpg" alt="Swissnex Logo" width="229" height="75" class="aligncenter size-full wp-image-401" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aSwissnex.jpg 229w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/aSwissnex-225x75.jpg 225w" sizes="(max-width: 229px) 100vw, 229px" /></div>
+<div class="one-third column omega"><img src="/wp-content/uploads/sites/4329/2016/01/aTalix.png" alt="Talix Logo" width="199" height="75" class="aligncenter size-full wp-image-406" /></div>
+</div>
+<div class="row nomargin">
+<div class="six columns offset-by-five"><img src="/wp-content/uploads/sites/4329/2016/01/aTintri.png" alt="Tintri Logo" width="192" height="75" class="aligncenter size-full wp-image-405" /></div>
+</div>
+</div>
+													</div><!-- .entry-content -->
+					</article><!-- #post-183 -->
+
+				</div><!-- #main -->
+			</div><!-- #content -->
+		</div><!-- #primary -->
+	</div>
+
+		</div><!-- container -->
+	</div><!-- super container -->
+<div class="super-container footer-container footer-background-color">
+	<div class="super-container">
+		<div class="container">
+			<div class="clear"></div>
+			<div class="footer">
+				<div class="sixteen columns alpha omega">
+					<div class="one-third column alpha">
+						<div class="contact-info">
+							<div class="contact-address"><h2 class="tertiary-font-color">Polatnick Properties, Inc.</h2>660 Third Street, Suite 150<br />San Francisco, CA 94107</div><div class="contact-phone">T: <a href="tel:4154425000">(415) 442-5000</a></div><div class="contact-fax">F: (415) 442-5007</div><div class="contact-email">E: <a href="mailto:david@propertyx.com">david@propertyx.com</a></div>						</div>
+					</div>
+					
+					
+				</div>
+							</div>
+
+		</div><!-- container -->
+	</div><!-- super-container -->
+</div><!-- super-container -->
+
+<div class="super-container copyright-and-logo footer-background-color-basement">
+	<div class="container">
+		
+		<div class="footer-links header_font">&copy; 2015 - 2017 Polatnick Properties, Inc.<br></div>
+		
+		
+	</div>
+</div>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-content/themes/appfolio-framework/assets/js/appfolio_gallery.min.js?ver=1482869089'></script>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-content/themes/broadway/assets/js/appfolio_broadway_theme.min.js?ver=1482869044'></script>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3fb85c8a63","applicationID":"11308522","transactionName":"MQRVZkMHD0UHUU1dVwhOdlFFDw5YSUJYU10=","queueTime":0,"applicationTime":360,"atts":"HUNWEAsdHEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

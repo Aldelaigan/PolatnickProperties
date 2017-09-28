@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+
+<head>
+
+	<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+	<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+	<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+	<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+	<!--[if gte IE 9 ]><html class="no-js ie9" lang="en"> <![endif]-->
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+			<script type="text/javascript">
+		var ajaxurl = 'http://www.polatnickproperties.com/wp-admin/admin-ajax.php';
+		</script>
+		
+<!-- This site is optimized with the Yoast SEO plugin v4.0.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Case Studies - Polatnick Properties, Inc.</title>
+<link rel="canonical" href="http://www.polatnickproperties.com/case-studies/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Case Studies - Polatnick Properties, Inc." />
+<meta property="og:description" content="CASE STUDIES Relocating to 340,000 sqft Exploratorium, Pier 15 &amp; 17, San Francisco The Challenge ..." />
+<meta property="og:url" content="http://www.polatnickproperties.com/case-studies/" />
+<meta property="og:site_name" content="Polatnick Properties, Inc." />
+<meta property="og:image" content="http://polatnickproperties.appfoliowebsites4.com/wp-content/uploads/sites/4329/2016/01/ExploratoriumPier.jpg" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/650Townsend.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/1355Market.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/100Pine.png" />
+<meta property="og:image" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/701Chestnut.png" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.polatnickproperties.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='appfolio_icomoon_shortcodes_css-css'  href='http://www.polatnickproperties.com/wp-content/plugins/appfolio-icomoon-shortcodes/assets/css/appfolio_icomoon_shortcodes.min.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='appfolio-css'  href='http://www.polatnickproperties.com/wp-content/themes/broadway/assets/css/appfolio_broadway_theme.min.css?ver=1482869043' type='text/css' media='all' />
+<link rel='stylesheet' id='appfolio-global-css-css'  href='http://www.polatnickproperties.com/wp-content/themes/appfolio-framework/assets/css/appfolio-framework.min.css?ver=1482869089' type='text/css' media='all' />
+<link rel='stylesheet' id='appfolio_google_font-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;ver=4.7.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://www.polatnickproperties.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.polatnickproperties.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.polatnickproperties.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='http://www.polatnickproperties.com/?p=182' />
+<link rel="alternate" type="application/json+oembed" href="http://www.polatnickproperties.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.polatnickproperties.com%2Fcase-studies%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.polatnickproperties.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.polatnickproperties.com%2Fcase-studies%2F&#038;format=xml" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-73331202-2', 'auto', {'name':'appfolio'});
+	  ga('appfolio.send', 'pageview');
+	</script>
+<link type="text/plain" rel="author" href="http://www.polatnickproperties.com/wp-content/themes/appfolio-framework/humans.txt" /><link rel="icon" href="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-32x32.png" sizes="32x32" />
+<link rel="icon" href="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-180x180.png" />
+<meta name="msapplication-TileImage" content="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/cropped-PPIIcon-270x270.png" />
+<!-- AppFolio Customizer Output --><style type="text/css">body, .body-background-color { background:#ffffff; }.primary-background-color { background:#5682cd; }.secondary-background-color { background:#5682cd; }.tertiary-background-color { background:#000000; }.menu-background-color { background:rgba(86, 130, 205, 1.0); }.main-menu-location ul li:hover > a, .main-menu-location ul li:focus > a, .main-menu-location ul ul.sub-menu li a:hover, .main-menu-location ul ul.sub-menu li a:focus, .login-menu-location ul li:hover > a, .login-menu-location ul li:focus > a, .login-menu-location ul ul.sub-menu li a:hover, .login-menu-location ul ul.sub-menu li a:focus { background:#5682cd; }.main-menu-location ul ul.sub-menu, .login-menu-location ul ul.sub-menu { background:#5682cd; }.menu-hightlight-color { background:rgba(98, 142, 217, 1.0); }.footer-background-color { background:#5682cd; }.footer-background-color-basement { background:#3c68b3; }.between-primary-and-secondary-33 { background:#5682cd; }.between-primary-and-secondary-66 { background:#5682cd; }.header_font, h1, h2, h3, h4, h5, h6 { font-family:"Open Sans", sans-serif; }.body_font, body { font-family:"Open Sans", sans-serif; }.primary-font-color, primary-font-color a, primary-font-color a:visited, h2 { color:#2e2423; }.primary-font-color-alt { color:#473d3c; }ul.property-menu li.menu-item.current-item a, .property-single-detail-box { color:#ffffff; }ul.property-menu li.menu-item.current-item:after { border-top:10px #5682cd solid; }.menu-font-color, .footer, .footer-links { color:#ffffff; }h3, .icon-home, .header-phone { color:#5682cd; }.secondary-font-color, h4 { color:#5682cd; }.tertiary-font-color, h1, .footer h2 { color:#000000; }.header-phone .social-menu-location ul li a:before { color:#5682cd; }.greeting-box { background:rgba(46, 36, 35, 0); }.greeting-box, .greeting-box h1 { color:#ffffff; }.greeting-button, .greeting-button:hover, .greeting-button:focus, .greeting-button:visited { color:#ffffff; }.greeting-button { background:#ffffff; }a.greeting-button:hover, a.greeting-button:focus { background:#e5e5e5; }.box_1 { background:#edecea; }.box_1 { color:#2e2423; }.box-button_1 { background:#b1822d; }.box-button_1:hover, .box-button_1:focus { background:#976813; }.box-button_1, .box-button_1:hover, .box-button_1:focus, .box-button_1:visited { color:#ffffff; }.box_2 { background:#edecea; }.box_2 { color:#000000; }.box-button_2 { background:#b1822d; }.box-button_2:hover, .box-button_2:focus { background:#976813; }.box-button_2, .box-button_2:hover, .box-button_2:focus, .box-button_2:visited { color:#ffffff; }.box_3 { background:#edecea; }.box_3 { color:#2e2423; }.box-button_3 { background:#b1822d; }.box-button_3:hover, .box-button_3:focus { background:#976813; }.box-button_3, .box-button_3:hover, .box-button_3:focus, .box-button_3:visited { color:#ffffff; }.header_font, h1, h2, h3, h4, h5, h6 { font-family:"Open Sans", sans-serif; }.body_font, body { font-family:"Open Sans", sans-serif; }</style><!-- AppFolio Customizer Output -->		<style type="text/css" id="wp-custom-css">
+			
+
+@import url(https://fonts.googleapis.com/css?family=Hind);
+div.logo {
+    padding: 15px 0 10px 5px;
+}
+
+@media only screen and (max-width: 767px) {
+.home .super-container.header-image {
+    height: 425px !important;
+}
+}
+/*
+.entry-content {
+  margin:0% 6%;*/
+}
+/* Header Bar
+------------------------------ */
+
+/*push logo further to right
+div.logo {
+    padding: 15px 0 10px 65px;*/
+}
+
+/*Make home page image taller on mobile*/
+@media only screen and (max-width: 767px) {
+.home .super-container.header-image {
+    height: 400px;
+}
+}
+
+
+/*Push phone number down on larger screen sizes to align with center of logo*/
+@media only screen and (min-width:767px) {
+.super-container.header .header-phone a {
+    margin: 40px 0 0;
+}
+}
+
+
+/* Make phone number black instead of light green */
+.header-phone a {
+color:#005030;
+      font-size: 16px !important;
+}
+
+
+/* Home Page
+--------------------------- */
+
+/*Add space below icons*/
+.row.ppi-icon-row {
+  padding-bottom: 30px;
+}
+
+/*Remove boxes from home page*/
+.super-container.boxes-holder {
+     display: none;
+}
+
+.page-id-2 .header_font {
+    font-weight: 700;
+}
+
+/* Case Studies Page
+------------------------------ */
+
+.page-id-182 .entry-content h2 {
+    /*font-family: 'Hind', sans-serif;*/
+    /*text-align:center;*/
+/*    font-weight:700;*/
+    /*text-transform:uppercase;*/
+    font-size: 18px;
+    color:#005030 !important;
+}
+
+.page-id-182 .entry-content h3 {
+    /*font-family: 'Hind', sans-serif;
+text-align:center;*/
+    font-size: 22px;
+    color:#444!important;
+  font-weight:700;
+}
+
+.page-id-183 .entry-content img {
+    padding-bottom:20px;
+}
+
+
+
+/* Main and Login Menus
+------------------------------ */
+
+/*Hide home button on desktop*/
+@media only screen and (min-width: 768px) {
+li.hidehome {
+   display:none !important;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  .super-container.menu-background-color {
+    background: #CCBDAE;
+  }
+}
+
+.menu-main-menu-container ul.menu li.menu-item a,
+.login-menu-location ul li a {
+  font-size: 16px;
+  /*font-weight:700;*/
+  letter-spacing: 2px;
+}
+
+.menu-main-menu-container ul.menu li.menu-item.current-menu-item a {
+  background: #77A694;
+}
+
+
+
+/* Gravity Forms Modifications
+--------------------------------- */
+
+body .gform_wrapper .gform_body .gform_fields .gfield input[type=text],
+body .gform_wrapper .gform_body .gform_fields .gfield textarea {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; 
+}
+
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type=submit] {
+   background: #77A694;
+   border: none;
+   font-size: 1.5em;
+   color: #ffffff;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   font-family: inherit;
+   padding: 5px 20px;
+   cursor: pointer;
+}
+
+.gform_wrapper .gform_footer input.button:hover, 
+.gform_wrapper .gform_footer input[type=submit]:hover {
+ 	color: #ffffff;
+	background: #005030;
+}
+  
+  
+---------------------------------*/
+
+.page-template-default .header.entry-header .entry-title {
+  display:none;
+  visibility:hidden;
+}
+.entry-title {
+  display:none;
+}
+
+.page-template-default #primary {
+  margin-top: 0;
+}
+
+/*Add space below three dot section break image
+.sectionbreak img {
+ margin-bottom:40px;
+}*/
+
+
+
+/* Site Text
+--------------------------- */
+
+
+
+.entry-content h1 {
+    line-height: 1em;
+    font-size: 28px;
+    letter-spacing: 4px;
+    word-spacing:5px;
+    padding-bottom:20px;
+    margin-top: 42px;
+  color:#005030;
+/*text-align:center;*/
+}
+
+.entry-content p, .entry-content li {
+/*text-align:center;*/;
+}
+.entry-content h3 {
+   color:#005030;
+/*text-align:center;*/
+}
+
+
+
+.entry-content h2 {
+    padding-bottom:20px;
+/*text-align:center;*/
+}
+.entry-content h4 {
+     font-size:20px;
+ /* font-weight:700;*/
+   /*text-align:center;*/
+  color:#333;
+}
+
+/*make h2 text black on case studies page*/
+.pph2 h2 {
+  color:#000;
+}
+
+.footer h2 {
+    color: #ffffff !important;
+}
+
+
+
+/* Buttons!
+--------------------------- */
+a.ppi-button {
+  text-align:center;
+  width:95%;
+  letter-spacing: 2px;
+  margin-top:20px;
+}
+
+.ppi-button,
+a.ppi-button:visited {
+  margin-bottom: 10px;
+  border: 2px solid #005030;/*#77A694*/
+  background: #005030; /*#77A694*/
+  color: #ffffff;
+  padding: 7px 10px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: inherit;
+}
+
+
+a.ppi-button:hover {
+  	color: #ffffff;
+	background: #A3C1B5;
+}
+
+
+
+/* --------------------------- */
+
+hr {
+  border-top:1px solid #222;
+}
+
+/*add space between phone number sections on contact us page on mobile*/
+.addspace {
+  padding-bottom:20px;
+  text-align:center;
+}
+
+/*remove margins for these rows*/
+.nomargin {
+  margin-bottom:0px;
+}
+
+
+/*Tenant/Landlord Services Page*/
+.content-section > div {
+    display: none;
+}
+
+.content-section h2:hover {
+    cursor:pointer;
+    color:#005030;
+    text-decoration:underline;
+}
+
+.makebigger {
+    padding-bottom:30px;
+    margin-top: 42px;
+    text-align:center;
+    font-size: 20px;
+}
+.graybackground {
+  background:#ddd !important;
+}
+
+.postid-518 .super-container.map-holder {
+  display: none;
+}		</style>
+	</head>
+
+<body class="page-template-default page page-id-182 paper-texture"><!-- the Body  -->
+		<a href="#main-content" class="skip-to-content-link visually-hidden">
+		Skip to content	</a>
+		<div class="super-container header desktop">
+		<div class="container">
+			<div class="five columns omega header-phone">
+				<a href="tel:4154425000">(415) 442-5000</a>				<div class='social-info icon-social social-menu-location'>
+					<!--  Social Menu -->
+									</div>
+			</div>
+			<div class="eleven columns alpha">
+				<div class="logo">
+					<a href="http://www.polatnickproperties.com"><img src="/wp-content/uploads/sites/4329/2016/01/PPILogo.png" alt="Polatnick Properties, Inc. Logo"></a>				</div>
+			</div>
+		</div>
+	</div>
+	<div class="super-container">
+		<div class="super-container menu-background-color menu-font-color">
+			<div class="container">
+								<div class="fourteen columns alpha main-menu-location nojquery">
+					<div class="main-menu-welcome">
+													<div class="mobile-logo-holder">
+								<img src="/wp-content/uploads/sites/4329/2016/01/PPILogo.png" alt="Polatnick Properties, Inc. Logo">							</div>
+												<button type="button" class="icon-list">&#xe61e;</button>
+					</div>
+					<!--  the Menu -->
+					<div class="hider">
+						<nav class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-272" class="hidehome menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-272"><a href="http://www.polatnickproperties.com/">Home</a></li>
+<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="http://www.polatnickproperties.com/about/clients/">About</a></li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://www.polatnickproperties.com/about/">Team</a></li>
+<li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-182 current_page_item menu-item-192"><a href="http://www.polatnickproperties.com/case-studies/">Case Studies</a></li>
+<li id="menu-item-166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-166" aria-haspopup="true"><a href="#">Services</a>
+<ul class="sub-menu" aria-haspopup="false" aria-label="Sub Menu">
+	<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190"><a href="http://www.polatnickproperties.com/landlord-and-tenant-representation/">Landlord &#038; Tenant Representation</a></li>
+	<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189"><a href="http://www.polatnickproperties.com/investments-and-property-development/">Investments &#038; Property Development</a></li>
+	<li id="menu-item-132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132"><a href="http://www.polatnickproperties.com/property-and-asset-management/">Property &#038; Asset Management</a></li>
+	<li id="menu-item-337" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-337"><a href="http://www.polatnickproperties.com/construction-management-advisory-services/">Advisory Services</a></li>
+	<li id="menu-item-308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-308"><a href="http://www.polatnickproperties.com/tenant-landlord-services/">Landlord &#038; Tenant Services</a></li>
+</ul>
+</li>
+<li id="menu-item-441" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-441"><a href="http://www.polatnickproperties.com/category/listings/">Listings</a></li>
+<li id="menu-item-25" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25"><a href="http://www.polatnickproperties.com/contact-us/">Contact</a></li>
+<li id="menu-item-419" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-419"><a href="http://www.polatnickproperties.com/category/news/">News</a></li>
+</ul></nav>						
+					</div>
+				</div>
+									
+							</div> <!-- container -->
+		</div> <!-- super-container -->
+
+		<div id="main-content"><!-- target for accessibility purposes --></div>
+
+			</div>
+	<div class="super-container primary-font-color-alt">
+	<div class="container">
+	<div class="sixteen columns alpha">
+		<div id="primary">
+			<div id="content">
+				<div class="main">
+					<header class="entry-header">
+						<h1 class="entry-title">Case Studies</h1>
+					</header>
+
+										<article id="post-182" class="post-182 page type-page status-publish hentry">
+						<div class="entry-content">
+							<h1>CASE STUDIES</h1>
+<hr />
+<h3>Relocating to 340,000 sqft</h3>
+<h2>Exploratorium, Pier 15 &amp; 17, San Francisco</h2>
+<h4>The Challenge<img class="alignright wp-image-383 size-full" src="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/ExploratoriumPier.jpg" alt="Exploratorium and Pier 15 &amp; 17" width="400" height="300" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/ExploratoriumPier.jpg 400w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/ExploratoriumPier-300x225.jpg 300w" sizes="(max-width: 400px) 100vw, 400px" /></h4>
+<p>Polatnick Properties represented the Exploratorium in its process of reviewing and expanding their existing space in The Palace of Fine Arts in San Francisco. The project goal was to double the occupied space and consolidate all operations under one roof while increasing public access.</p>
+<h4>The Solution</h4>
+<p>The Exploratorium hired Polatnick Properties to assess their current 100,000 square foot facility and its suitability for the organization’s future needs. The Exploratorium chose Polatnick due to his consulting experience with non-profit entities, building repositioning and reuse, zoning, depth of knowledge, and consensus-based team building approach.</p>
+<h4>The Result</h4>
+<p>The Exploratorium undertook focus groups both within the organization and with the general public to clarify its mission and direction. Detailed financial analysis was used to facilitate lease vs. own discussions. Extensive studies were executed on suitable locations, public transportation, zoning, community group involvement, construction cost differentials, and redevelopment potential. The Exploratorium secured a long-term lease at Piers 15-17. The new Exploratorium at Pier 15, including the interior mezzanine, the observatory addition, outdoor terrace, and public access areas is 230,000 square feet with expansion rights to additional 110,000 at Pier 17.</p>
+<hr />
+<h3>From White Elephant to Swan</h3>
+<h2>650 Townsend Street, San Francisco</h2>
+<h4>The Challenge<img class="alignright size-full wp-image-321" src="/wp-content/uploads/sites/4329/2016/01/650Townsend.png" alt="650 Townsend Building Exterior" width="400" height="303" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/650Townsend.png 400w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/650Townsend-300x227.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></h4>
+<p>Purchased in 1997 while 98% vacant, the 650,000 square foot Fashion Center had been on the market for sale for three years, and was considered a white elephant by its owners and the real estate community. Mellon Bank and five other lenders had previously foreclosed on the property and had taken possession from the world-renowned architect and developer John Portman.</p>
+<h4>The Solution</h4>
+<p>David Polatnick mobilized a team to purchase the property from Mellon Bank. When he looked at the fledgling multi-media industry in the early 1990&#8217;s, Polatnick could envision a future in which the Internet would play a dominant role, and he could then translate that vision to what it would mean to the real estate market. The Team substantially repositioned the building into a model for high tech urban campuses.</p>
+<h4>The Result</h4>
+<p>Within 24 months, the property was 100% leased to conservative multi-media tenants including Sega of America, Macromedia, Shockwave, Ziff-Davis, and Tech TV. In 2006, the property was sold for between four and five times its acquisition costs.</p>
+<hr />
+<h3>Un-Renovated Brick And Timber</h3>
+<h2>660 Third Street, San Francisco</h2>
+<h4>The Challenge</h4>
+<p>660 Third Street started as a brick and timber warehouse originally constructed in 1906.</p>
+<h4>The Solution</h4>
+<p>David Polatnick advanced a strategy for repositioning the operation and tenancy of the building. In 1996, Polatnick put together a team to re-tenant the 85,000 square foot building. The building went through a complete renovation, which included seismic upgrade and code compliance for office, retail and tenant improvements.</p>
+<h4>The Result</h4>
+<p>With an eye for the New Economy, Polatnick tripled the electrical power to the facility and installed fiber optics, the first commercial building in San Francisco to do so, making it into one of the most sought after multi-media addresses in multimedia gulch.</p>
+<hr />
+<h3>From Last Place to Jewel in the Crown</h3>
+<h2>1355 Market Street, San Fransisco</h2>
+<h4>The Challenge<img class="alignright size-full wp-image-323" src="/wp-content/uploads/sites/4329/2016/01/1355Market.png" alt="1355 Market Building Exterior" width="400" height="266" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/1355Market.png 400w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/1355Market-300x200.png 300w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/1355Market-220x146.png 220w" sizes="(max-width: 400px) 100vw, 400px" /></h4>
+<p>SF Mart is a 1.3 million square foot complex that housed over 300 tenants in the wholesale furniture industry. The building was in last place behind the Dallas and Atlanta wholesale furniture markets. The challenge was to increase the building tenancy, position the building to be the leader in the regional marketplace, and to attract additional traffic to the wholesale mart to shop for the tenants&#8217; merchandise.</p>
+<h4>The Solution</h4>
+<p>David Polatnick was relocated from New York City to re-direct the marketing and lease strategies. He analyzed the current tenant mix and recognized the opportunity for diversification. As well, he applied innovative marketing campaigns, such as flying in buyers from across the country for $99 round-trip to shop the complex.</p>
+<h4>The Result</h4>
+<p>The building moved from last place to first place ahead of the Dallas and Atlanta markets. The complex became one of the jewels of the owner&#8217;s $5 billion portfolio.</p>
+<hr />
+<h3>Wallflower Building In a Tough Market</h3>
+<h2>100 Pine Street, San Francisco</h2>
+<h4>The Challenge<img class="alignright size-full wp-image-320" src="/wp-content/uploads/sites/4329/2016/01/100Pine.png" alt="100 Pine Building Exterior" width="200" height="363" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/100Pine.png 200w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/100Pine-165x300.png 165w" sizes="(max-width: 200px) 100vw, 200px" /></h4>
+<p>100 Pine Street is a 400,000 square foot class A building in the heart of San Francisco&#8217;s Financial District. Unico Properties and a group of private investors purchased 100 Pine Street in late 2000. From the time of the purchase to December of 2003, only renewals were completed, and one new lease had been signed.</p>
+<h4>The Solution</h4>
+<p>Polatnick’s team was assigned to 100 Pine in January 2004. The team worked to change the perception of the building by encouraging ownership to meet the increasing market demand for smaller pre-built suites (2,500-8,000 rsf), by offering aggressive commissions, by persistent follow-up with prospects, and by submitting unsolicited proposals. A “buzz” was created about 100 Pine and Polatnick’s team led buildings tours for as many as 20 new tenants a week.</p>
+<h4>The Result</h4>
+<p>Within the first seven months of having the 100 Pine assignment, property repositioning in the brokerage community was greatly improved, the team had performed over 250 tours, had eight closed deals (42,000 rsf), and was in lease negotiations for an additional 50,000 rsf. Within a short period of time, Polatnick&#8217;s team achieved a 95 percent occupancy, which allowed the ownership to position the property for a very successful sale of the assets.</p>
+<hr />
+<h3>Outdated Theater In An Old Building</h3>
+<h2>1244 Sutter Street, San Fransisco</h2>
+<h4>The Challenge</h4>
+<p>1244 Sutter was a single-screen theater in an un-reinforced masonry building. There was a retail tenant on the ground floor with a month-to-month lease.</p>
+<h4>The Solution</h4>
+<p>David Polatnick developed a strategic plan to reposition the operation and tenancy of the building. After extensive review of the historic aspects of the building, Polatnick found that in the 1960&#8217;s, the building was used as a concert hall called the Avalon Ballroom, which hosted bands including the Rolling Stones and The Who.</p>
+<h4>The Result</h4>
+<p>After a comprehensive base-building seismic upgrade, Polatnick secured a long-term tenant that was willing and able to restore the building to its original grandeur. The building was used as a facility for upmarket events. Polatnick also supported a three-way transaction that simultaneously installed a subtenant for the ground floor. </p>
+<hr />
+<h3>Repositioning For The New SOMA</h3>
+<h2>99 Rhode Island, San Francisco</h2>
+<h4>The Challenge</h4>
+<p>David Polatnick was hired to reposition the property to take advantage of the New Economy emerging in the SOMA/South of Market area of San Francisco.</p>
+<h4>The Solution</h4>
+<p>In the 1990s, Polatnick recognized the early signs of the blossoming multi-media industry and the important role that the Internet would play in the coming century. His knowledge of the market and his experience in converting buildings in the SOMA district of San Francisco to higher and better uses, all came into play at 99 Rhode Island. After an extensive review of city planning history, Polatnick was able to uncover past uses of the property which allowed the restaurant supply site to be grandfathered into a usage that allowed office-zoning allocation.</p>
+<h4>The Result</h4>
+<p>Polatnick delivered a world renowned credit-worthy tenant to consummate a long term, true triple-net transaction. The tenant put in all the base building upgrades, performed all the code compliance work, and paid tenant improvement costs. The asset became the Number One performer in the owner’s portfolio.</p>
+<hr />
+<h3>Tough Zoning? Not For the Right Buyer</h3>
+<h2>701 Chestnut, San Fransisco</h2>
+<h4>The Challenge<img class="alignright size-full wp-image-322" src="/wp-content/uploads/sites/4329/2016/01/701Chestnut.png" alt="701 Chestnut Building Exterior" width="400" height="268" srcset="http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/701Chestnut.png 400w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/701Chestnut-300x201.png 300w, http://www.polatnickproperties.com/wp-content/uploads/sites/4329/2016/01/701Chestnut-220x146.png 220w" sizes="(max-width: 400px) 100vw, 400px" /></h4>
+<p>San Francisco Art Institute needed to sell 701 Chestnut to leverage the funds back into their operations. This property was difficult to sell due to North Beach zoning, which severely mandates and limits uses of commercial buildings.</p>
+<h4>The Solution</h4>
+<p>The Polatnick Team was able to conduct a nation-wide search to find a buyer that would fit into the specific use parameters. At the end, there were three potential buyers vying for the asset. The winning buyer increased the offer by over $1,000,000 from the original offer.</p>
+<h4>The Result</h4>
+<p>San Francisco Art Institute was able to sell the property in a timely manner and accomplished their financial goal.</p>
+<hr />
+<h3>New Space For Doing Good</h3>
+<h2>Walter and Elise Haas Fund, San Fransisco</h2>
+<h4>The Challenge</h4>
+<p>The Polatnick Team was hired by the Walter and Elise Haas Fund, a San Francisco institution that has worked to improve the quality of life in the Bay Area for over six decades. After ten years in the same location, their lease was up for renewal, and the premises were in need of costly renovation. David Polatnick was chosen for his extensive experience with tenant representation, specifically his work with non-profit tenants.</p>
+<h4>The Solution</h4>
+<p>The Polatnick Team conducted an extensive review of the marketplace and identified multiple viable options for relocation. Concurrently, we the team conducted a complete investigation of the benefits and disadvantages of lease renewal. After Haas choose their top spaces, we developed a space plan and financial analysis of each property, outlining the costs for desired improvements. Provided with this information, we worked together with the Haas Fund to compare and contrast each option, and analyze the short and long-term implications of each.</p>
+<h4>The Result</h4>
+<p>Armed with a comprehensive understanding of current market rates, supported by available property options and construction costs, Haas was able to negotiate a new 10-year lease with a very favorable rent and above-standard tenant improvement package. By teaming with David Polatnick, they secured an agreement which had a 65 percent increase in value above the landlord&#8217;s original offer.</p>
+<hr />
+<h3>Finding a Permanent Home</h3>
+<h2>San Jose Museum Of Quilts &amp; Textiles, San Jose, California</h2>
+<h4>The Challenge</h4>
+<p>The museum sought a permanent home in a desirable central cultural district to end a prolonged facility search and to build an asset for the organization. They were, however, unable to raise sufficient capital to get into a full ownership position and lacked the strength to obtain favorable financing. Until this point, the museum had leased space in multiple temporary locations, a situation that drained the organizations resources, created a state of impermanence, and limited philanthropic giving.</p>
+<h4>The Solution</h4>
+<p>Polatnick created a partnership for the San Jose Museum of Quilts and Textiles, composed of a group of philanthropic investors including Polatnick, who matched on a one-to-one basis the museum&#8217;s initial capital fund drive. The partnership then took the form of a Limited Liability Corporation (LLC) to purchase and renovate a building the Museum had determined was best suited to their needs and that would support the mission. The investors signed for the bank financing. The museum then took out a lease on the building from the LLC under very favorable terms, as they partially lease the building themselves and realize a return on their own equity position. Under this arrangement the museum has an option to buy out the private investor group at a pre-determined fixed price, and will launch a major capital campaign in an effort to do so.</p>
+<h4>The Result</h4>
+<p>With the capital infusion from the private investor group, the museum leveraged loan dollars available through their donor base to acquire an ownership position in downtown San Jose. The Redevelopment Agency then offered an exceedingly generous loan package to improve the building for the museum.</p>
+<hr />
+<h3>Acquiring A New Campus And Future</h3>
+<h2>California College of the Arts, San Fransisco</h2>
+<h4>The Challenge</h4>
+<p>The California College of The Arts needed a vehicle to launch an aggressive Capital Campaign to expand its San Francisco Campus.</p>
+<h4>The Solution</h4>
+<p>David Polatnick was retained to secure an urban campus through an acquisition. Additionally, the current CCA landlord was not supportive of the school’s effort to extend this existing lease. Polatnick worked closely with the President of CCA, Lorne Buchman, as well as with other members of the board, to identify assets that were a better fit with the long-term goals of the college.</p>
+<h4>The Result</h4>
+<p>Polatnick extended CCA&#8217;s existing lease to take advantage of the decreasing values in real estate in the early 1990s. After an exhaustive search, CCA purchased 1111 Eighth Street, a former (approximately) 160,000 square foot Greyhound bus repair facility. In 2003, Polatnick represented CCA in taking a long-term lease of an additional 20,000 square feet for its graduate studies program.</p>
+<hr />
+<h3>Tough Situations</h3>
+<h2>Macrovision, Santa Clara, CA</h2>
+<h4>The Challenge</h4>
+<p>Macrovision&#8217;s challenge was four-fold:</p>
+<ol>
+<li>The tech firm required immediate expansion space to meet aggressive growth projections.</li>
+<li>It faced the burden of a long-term, over-market remaining obligation at its existing site.</li>
+<li>Its options were constrained by an executive directive limiting any increase in annual GAAP expenses.</li>
+<li>Expansion alternatives were limited and competition for the optimal alternative was fierce. Macrovision retained David Polatnick and his team to achieve its growth strategy while not exceeding its current annual GAAP charge.</li>
+</ol>
+<h4>The Solution</h4>
+<p>After consulting with Polatnick&#8217;s real estate accounting team, Polatnick negotiated an extension of Macrovision&#8217;s existing lease, whereby the extension rent will be derived by a &#8220;FMV determination&#8221; method with a floor reflecting today&#8217;s soft market conditions. This structure allowed Macrovision to adjust (downward) its current annual GAAP rent charge. The GAAP savings generated by the &#8220;FMV&#8221; extension offset the new GAAP charges associated with the expansion space commitment. Macrovision successfully competed for its optimal expansion alternative. However, it was obligated to secure more space than immediately required. Polatnick, in turn, and prior to occupancy, further secured a short-term subtenant to completely offset the expense of the excess expansion space.</p>
+<h4>The Result</h4>
+<p>Polatnick&#8217;s team successfully negotiated a 5-year extension of Macrovision&#8217;s existing lease and a new 12-year lease for expansion space totaling 160,000 RSF. Polatnick also secured a credit subtenant for approximately 1/3 of the expansion commitment. The entire transaction had a negligible impact on Macrovision&#8217;s annual GAAP charge – from a GAAP accounting perspective, Macrovision leased an additional 75,000 RSF at a rental rate of $8,000/month, which is less than one penny per RSF per month.</p>
+													</div><!-- .entry-content -->
+					</article><!-- #post-182 -->
+
+				</div><!-- #main -->
+			</div><!-- #content -->
+		</div><!-- #primary -->
+	</div>
+
+		</div><!-- container -->
+	</div><!-- super container -->
+<div class="super-container footer-container footer-background-color">
+	<div class="super-container">
+		<div class="container">
+			<div class="clear"></div>
+			<div class="footer">
+				<div class="sixteen columns alpha omega">
+					<div class="one-third column alpha">
+						<div class="contact-info">
+							<div class="contact-address"><h2 class="tertiary-font-color">Polatnick Properties, Inc.</h2>660 Third Street, Suite 150<br />San Francisco, CA 94107</div><div class="contact-phone">T: <a href="tel:4154425000">(415) 442-5000</a></div><div class="contact-fax">F: (415) 442-5007</div><div class="contact-email">E: <a href="mailto:david@propertyx.com">david@propertyx.com</a></div>						</div>
+					</div>
+					
+					
+				</div>
+							</div>
+
+		</div><!-- container -->
+	</div><!-- super-container -->
+</div><!-- super-container -->
+
+<div class="super-container copyright-and-logo footer-background-color-basement">
+	<div class="container">
+		
+		<div class="footer-links header_font">&copy; 2015 - 2017 Polatnick Properties, Inc.<br></div>
+		
+		
+	</div>
+</div>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-content/themes/appfolio-framework/assets/js/appfolio_gallery.min.js?ver=1482869089'></script>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-content/themes/broadway/assets/js/appfolio_broadway_theme.min.js?ver=1482869044'></script>
+<script type='text/javascript' src='http://www.polatnickproperties.com/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3fb85c8a63","applicationID":"11308522","transactionName":"MQRVZkMHD0UHUU1dVwhOdlFFDw5YSUJYU10=","queueTime":0,"applicationTime":332,"atts":"HUNWEAsdHEs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
